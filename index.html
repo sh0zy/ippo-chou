@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="大きな目標を具体的な一歩に分け、その日の状況に合わせて実行・修正するための計画帳" />
+    <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141619" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>一歩帳</title>
+    <script>
+      // 画面のちらつきを防ぐため、描画前にテーマを決める
+      try {
+        var raw = localStorage.getItem('ippo-chou:theme') || 'system'
+        var dark = raw === 'dark' || (raw === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-DIieaLG_.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/jsx-runtime-64GGRF7F.js">
+    <link rel="modulepreload" crossorigin href="./assets/arrow-left-BCeXNHts.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-RON6zYAU.css">
+  </head>
+  <body class="paper">
+    <div id="root"></div>
+    <noscript>このアプリを使うには JavaScript を有効にしてください。</noscript>
+  </body>
+</html>
